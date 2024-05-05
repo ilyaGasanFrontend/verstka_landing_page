@@ -1,0 +1,78 @@
+.wrapper_section--why {
+    color: #111111;
+    background-image:  url("../src/background_why.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(0, -80px);
+}
+.container_section--why {
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+.title_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+.title_why {
+    margin-bottom: 1.2rem;
+}
+.container_cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.card_list {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+.card_el {
+    width: calc(32% - 2%); /* 3 элемента в строку с отступами между ними */
+    margin-right: 5%; /* Отступы между элементами */
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    position: relative;
+    overflow: hidden;
+  }
+  .card_el::before {
+    position: absolute;
+    left: -360px;
+    bottom: -200px;
+    content: url("./../src/why/obj.png");
+  }
+  
+  .card_el:nth-child(3n) {
+    margin-right: 0; /* Убираем отступ у каждого третьего элемента */
+  }
+  .card_el:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+  .wrapper_card_img {
+    width: 115px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .img_card {
+    width: 100%;
+  }
+  .title_card {
+    margin-bottom: 10%;
+  }
+  .description_card {
+    margin-bottom: 10%;
+    text-align: center;
+    width: 80%;
+  }
+  .item:nth-last-child(-n+3) {
+  margin-right: 0;
+}

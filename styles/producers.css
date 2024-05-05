@@ -1,0 +1,6 @@
+.wrapper_section--prod {
+    background-image: url("../src/producers/backgrund.png");
+    height: 60vh;
+    transform: translate(0, -125px);
+    background-size: 100% 100%;
+}
