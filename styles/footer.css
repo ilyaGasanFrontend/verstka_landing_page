@@ -1,0 +1,44 @@
+.footer {
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+}
+.footer_logo {
+    flex: 1;
+    height: 30%;
+}
+.logo_img {
+    height: 100%;
+}
+.footer_container {
+    width: 67%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_navbar {
+    display: flex;
+    align-items: center;
+    flex: 4;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu_list--footer {
+    width: 100%;
+    
+}
+.header_contacts {
+    flex: 1;
+
+}
+.button_send {
+    background-color: #969AF7;  
+    width: 7rem;  
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
