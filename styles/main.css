@@ -15,19 +15,22 @@ html,body {
     color: #fff;
     font-size: 16px;
     overflow-x: hidden;
+    background-color: #F2F2F4;
 }
 .wrapper {
     width: 100vw;
     min-height: 100vh;
-    background-color: #07086C;
+    background-color: #F2F2F4;
 }
 .wrapper_section {
     width: 100vw;
     height: 100vh;
-    background-image:  url("../src/background.svg");
-    background-repeat: no-repeat;
-    background-size: cover; /* растягиваем изображение на всю площадь контейнера */
-    height: 100vh;
+    background-image:  url("../src/title/bg.png"), url("../src/title/background_title.png");
+   background-repeat: no-repeat;
+    background-size: cover, cover; /* Размеры фоновых изображений */
+    -webkit-mask-image: url('../src/title/background_title.png');
+    mask-image: url('../src/title/background_title.png');
+    
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,0 +1,32 @@
+.wrapper_section--shem {
+    background-image: none;
+    color: black    ;
+}
+.container_section--shem {
+    display: flex;
+    flex-direction: column;
+}
+.description--shem {
+   text-align: center; 
+}
+.card_list--shem {
+    width: 100%;
+}
+.card_el--shem {
+    background: url("./../src/shem/test.svg");
+    width: calc(33% - 2rem);
+    height: 16rem;
+    margin-right: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+.square {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    width: calc(100% + 40px);
+    
+}
+.hei {
+    height: calc(100% + 30px);
+}

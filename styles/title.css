@@ -2,9 +2,15 @@
     width: 67%;
     height: fit-content;
 }
+.title_section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .container_section {
     display: flex;
-    height: 100%;
+    height: 70%;
     width: 100%;
 }
 .title_desc {

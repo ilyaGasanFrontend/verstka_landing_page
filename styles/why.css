@@ -1,9 +1,6 @@
 .wrapper_section--why {
     color: #111111;
-    background-image:  url("../src/background_why.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: translate(0, -80px);
+    background: none;
 }
 .container_section--why {
     flex-direction: column;

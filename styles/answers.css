@@ -1,0 +1,42 @@
+.wrapper_section--answers {
+    background-image: url('./../src/answers/bg.png'),url('./../src/answers/background.png');
+    background-size: cover, auto; /* Размеры фоновых изображений */
+    -webkit-mask-image: url('./../src/answers/background.png');
+    mask-image: url('./../src/answers/background.png');
+}
+.title_why--answers {
+    text-align: center;
+}
+.qwes_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.qwes_el {
+    width: 100%;
+    height: 2rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(189,192,255,1) 100%);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+.title_qwes:nth-last-child(1) {
+    margin: 0;
+}
+.wrapper_button_qwes {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #757AEF;
+}
