@@ -11,14 +11,54 @@
 }
 .card_list--shem {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .card_el--shem {
-    background: url("./../src/shem/test.svg");
     width: calc(33% - 2rem);
-    height: 16rem;
-    margin-right: 2rem;
+    background-image: url('../src/shem/image.png');
+    background-size: 100% 100%;
     position: relative;
+    background-repeat: no-repeat;
     overflow: hidden;
+    position: relative;
+    height: 20vh;
+    width: 33%;
+}
+.card_el--shem {
+    transform: translate(-0.3rem);
+}
+.card_el--shem:first-of-type {
+    transform: none;
+}
+.card_el--shem:nth-child(-n+2) {
+    background-size: 100% 90%;
+}
+.card_el--shem:nth-child(3) {
+    background-image: url('../src/shem/image\ copy\ 2.png');
+
+    transform: translateX(-0.6rem); /* Горизонтальное смещение на 1.8 единиц */
+}
+.card_el--shem:nth-child(6) {
+    background-image: url('../src/shem/image\ copy\ 3.png');
+}
+.card_el--shem:nth-child(5) {
+    background-image: url('../src/shem/image\ copy.png');
+}
+.card_el--shem:nth-child(4) {
+    background-image: url('../src/shem/image\ copy\ 4.png');
+}
+.card_el--shem:nth-child(4) {
+    background-size: 95% 90%;
+}
+.card_el--shem:nth-child(5) {
+    background-size: 100% 90%;
+    transform: translate(-1.6rem);
+
+}
+.card_el--shem:nth-child(6) {
+    background-size: 100% 90%;
+    transform: translate(-1.6rem);
 }
 .square {
     position: absolute;
@@ -27,6 +67,7 @@
     width: calc(100% + 40px);
     
 }
+
 .hei {
     height: calc(100% + 30px);
 }

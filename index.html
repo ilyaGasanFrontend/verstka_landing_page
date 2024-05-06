@@ -277,85 +277,25 @@
                             </div>
                         </div>
                         <div class="container_cards container_cards--shem">
-                            <ul class="card_list card_list--shem">
-                                <li class="card_el card_el--shem">
-                                    <img src="/src/shem/right.png" class="square">
+                            <ul class=" card_list--shem">
+                                
+                                <li class=" card_el--shem">
 
-                                    </img>
-                                    <div class="wrapper_card_img">
-                                        <img src="./src/why/card_1.png" alt="" class="img_card">
-                                    </div>
-                                    <div class="title_card">
-                                        <b>Качественная продукция</b>
-                                    </div>
-                                    <div class="description_card">
-                                        Все наши товары сертифицированы и имеют сопроводительную документацию.
-                                    </div>
                                 </li>
-                                <li class="card_el card_el--shem">
-                                    <img src="/src/shem/right.png" class="square">
+                                <li class=" card_el--shem">
 
-                                    <div class="wrapper_card_img">
-                                        <img src="./src/why/card_2.png" alt="" class="img_card">
-                                    </div>
-                                    <div class="title_card">
-                                        <b>Индивидуальный подход</b>
-                                    </div>
-                                    <div class="description_card">
-                                        Возможность изготовления компонентов специально для вас
-                                        на заводах-изготовителя. </div>
                                 </li>
-                                <li class="card_el card_el--shem">
-                                    <img src="/src/shem/image copy 2.png" class="square hei">
+                                <li class=" card_el--shem">
 
-                                    <div class="wrapper_card_img">
-                                        <img src="./src/why/card_3.png" alt="" class="img_card">
-                                    </div>
-                                    <div class="title_card">
-                                        <b>Бесплатная доставка</b>
-                                    </div>
-                                    <div class="description_card">
-                                        При наличии товара на складе и заказе от 10 000 рублей,
-                                        доставим бесплатно по Москве и СПБ в течение 2х часов. </div>
                                 </li>
-                                <li class="card_el card_el--shem">
-                                    <img src="/src/shem/image copy 2.png" class="square hei">
+                                <li class=" card_el--shem">
 
-                                    <div class="wrapper_card_img">
-                                        <img src="./src/why/card_3.png" alt="" class="img_card">
-                                    </div>
-                                    <div class="title_card">
-                                        <b>Бесплатная доставка</b>
-                                    </div>
-                                    <div class="description_card">
-                                        При наличии товара на складе и заказе от 10 000 рублей,
-                                        доставим бесплатно по Москве и СПБ в течение 2х часов. </div>
                                 </li>
-                                <li class="card_el card_el--shem">
-                                    <img src="/src/shem/image copy 2.png" class="square hei">
+                                <li class=" card_el--shem">
 
-                                    <div class="wrapper_card_img">
-                                        <img src="./src/why/card_3.png" alt="" class="img_card">
-                                    </div>
-                                    <div class="title_card">
-                                        <b>Бесплатная доставка</b>
-                                    </div>
-                                    <div class="description_card">
-                                        При наличии товара на складе и заказе от 10 000 рублей,
-                                        доставим бесплатно по Москве и СПБ в течение 2х часов. </div>
                                 </li>
-                                <li class="card_el card_el--shem">
-                                    <img src="/src/shem/image copy 3.png" class="square hei">
+                                <li class=" card_el--shem">
 
-                                    <div class="wrapper_card_img">
-                                        <img src="./src/why/card_3.png" alt="" class="img_card">
-                                    </div>
-                                    <div class="title_card">
-                                        <b>Бесплатная доставка</b>
-                                    </div>
-                                    <div class="description_card">
-                                        При наличии товара на складе и заказе от 10 000 рублей,
-                                        доставим бесплатно по Москве и СПБ в течение 2х часов. </div>
                                 </li>
 
                             </ul>
@@ -458,10 +398,23 @@
                         <a href="" class="button_send">Оставить заявку</a>
                     </div>
                 </div>
-                
+
             </footer>
         </div>
     </div>
 </body>
+<script>
+    var elements = document.querySelectorAll('.card_el--shem');
+
+    // Начальное значение z-index
+    var zIndexValue = 6;
+
+    // Проходимся по каждому элементу и устанавливаем z-index
+    elements.forEach(function (element) {
+        element.style.zIndex = zIndexValue;
+        console.log(element)
+        zIndexValue--; // Увеличиваем z-index для следующего элемента
+    });
+</script>
 
 </html>
