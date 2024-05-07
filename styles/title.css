@@ -61,6 +61,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
     margin-bottom: 1.4rem;
 }
 .title_form_text {

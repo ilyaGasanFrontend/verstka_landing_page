@@ -43,7 +43,7 @@
   }
   .card_el::before {
     position: absolute;
-    left: -360px;
+    right: 0;
     bottom: -200px;
     content: url("./../src/why/obj.png");
   }
