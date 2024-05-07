@@ -1,0 +1,76 @@
+ul {
+    margin: 0;
+    padding: 0
+}
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+html, body {
+    color: #fff;
+    font-size: clamp(12px, 3vw, 16px); /* Начальный размер, величина вьюпорта, максимальный размер */
+    overflow-x: hidden;
+    background-color: #F2F2F4;
+}
+.wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #F2F2F4;
+}
+.section {
+    width: 67%;
+    height: fit-content;
+}
+.wrapper_section {
+    width: 100vw;
+    height: 100vh;
+    background-image:  url("../src/title/bg.png"), url("../src/title/background_title.png");
+   background-repeat: no-repeat;
+    background-size: cover, cover; /* Размеры фоновых изображений */
+    -webkit-mask-image: url('../src/title/background_title.png');
+    mask-image: url('../src/title/background_title.png');
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title_section {
+    height: 100vh;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+h1 {
+    font-size: 3.9rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 1.3rem;
+}
+@media (max-width: 990px) {
+    body,html {
+        font-size: 14px;
+    }
+    .section {
+        width: 90%;
+    }
+}

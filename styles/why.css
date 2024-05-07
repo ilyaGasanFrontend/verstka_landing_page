@@ -73,3 +73,52 @@
   .item:nth-last-child(-n+3) {
   margin-right: 0;
 }
+.title_why {
+  text-align: center;
+}
+@media (max-width: 990px) {
+  .title_section--why {
+    height: fit-content;
+  }
+    .wrapper_section {
+      height: fit-content;
+    }
+    .container_section--why {
+      height: fit-content;
+    }
+    .card_el {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+    .card_el:nth-child(1) {
+      margin-bottom: 1rem;
+    }
+    .card_el:nth-child(2) {
+      margin-bottom: 1rem;
+    }
+    .card_el:nth-child(3) {
+      margin-bottom: 1rem;
+    }
+    .card_el:nth-child(4) {
+      margin-bottom: 1rem;
+    }
+    .card_el:nth-child(5) {
+      margin-bottom: 1rem;
+    }
+    .card_el:nth-child(6) {
+      margin-bottom: 0;
+    }
+   
+}
+@media (max-width: 440px) {
+  .el_card--shem {
+    width: 100% !important;
+  }
+  .el_card--shem:nth-child(2n - 1) {
+    margin-right: 0 !important;
+  }
+  .el_card--shem {
+    margin-right: 0;
+  }
+}

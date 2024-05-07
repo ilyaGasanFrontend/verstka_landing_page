@@ -42,3 +42,8 @@
     text-align: center;
     border-radius: 10px;
 }
+@media (max-width: 990px) {
+    .footer_navbar {
+        display: none;
+    }
+}

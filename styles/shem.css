@@ -64,11 +64,20 @@
     background-image: url('../src/shem/1.png');
 
 }
+.mobile {
+    display: none;
+}
+.desctop {
+    display: block;
+}
 .card_el--shem:nth-child(2) {
     width: 27.43rem;
     height: 16.81rem;
     background-image: url('../src/shem/2.png');
 
+}
+.wrapper_carousel {
+    margin-bottom: 1.2rem;
 }
 .card_el--shem:nth-child(3) {
     width: 25.81rem;
@@ -104,7 +113,55 @@
     height: 100%;
     width: calc(100% + 40px);
 }
+.desctop {
+    display: block;
+}
+.el_card--shem {
+    width: calc(50% - 2rem);
+    margin-bottom: 1rem;
+}
+.el_card--shem:nth-child(2n-1) {
+    margin-right: 2rem;
+  }
+.list_card--shem {
+    display: flex;
+    flex-wrap: wrap;
+}
+.description_why {
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+.el_card_container {
+    display:flex;
+    align-items: center;
+    padding: 0 1rem ;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(242,242,244,1) 0%, rgba(189, 192, 255, 1) 100%);
+    display: flex;
+}
+.id_card-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin-right: 2rem;
+}
+.img_card--mobile {
+    height: 50%;
 
-.hei {
-    height: calc(100% + 30px);
+}
+@media (max-width: 990px) {
+    .card_el--shem--down .container_card:nth-child(2)  {
+        margin-left: 0;
+    
+    }
+}
+@media (max-width: 860px) {
+    .desctop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
 }

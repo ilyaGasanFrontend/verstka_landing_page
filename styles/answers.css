@@ -1,6 +1,6 @@
 .wrapper_section--answers {
     background-image: url('./../src/answers/bg.png'),url('./../src/answers/background.png');
-    background-size: cover, auto; /* Размеры фоновых изображений */
+    background-size: 100% 100%, auto; /* Размеры фоновых изображений */
     -webkit-mask-image: url('./../src/answers/background.png');
     mask-image: url('./../src/answers/background.png');
 }
@@ -38,6 +38,9 @@
     padding: 1rem;
     border-radius: 10px;
 
+}
+.title_why--answers {
+    margin-bottom: 1rem;
 }
 .wrapper_el--active {
     background: rgb(150,154,247);
@@ -85,6 +88,13 @@ background: linear-gradient(180deg, rgba(150,154,247,1) 0%, rgba(104,110,236,1) 
 .button_icon--active {
     transform: rotate(180deg);
 
+}
+
+
+@media (max-width: 990px) {
+    .invisible {
+        display: none;
+    }
 }
 
 @keyframes slideIn {

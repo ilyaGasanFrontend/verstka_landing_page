@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/title.css">
-    <link rel="stylesheet" href="styles/why.css">
-    <link rel="stylesheet" href="styles/producers.css">
-    <link rel="stylesheet" href="styles/shem.css">
-    <link rel="stylesheet" href="styles/answers.css">
-    <link rel="stylesheet" href="styles/footer.css">
 
     <title>Document</title>
 </head>
@@ -24,39 +17,65 @@
                 <div class="header_logo">
                     <img src="src/logo.png" alt="" class="logo_img">
                 </div>
+                <div class="header_toggle">
+                    <div class="toggle_icon"></div>
+                </div>
                 <nav class="header_navbar">
-                    <ul class="menu_list flex">
+                    <ul class="menu_list">
                         <li class="menu_el">
-                            <a href="#" class="linck_menu">Каталог</a>
+                            <a href="#" class="link_menu">Каталог</a>
                         </li>
                         <li class="menu_el">
-                            <a href="#" class="linck_menu">Производители</a>
+                            <a href="#" class="link_menu">Производители</a>
                         </li>
                         <li class="menu_el">
-                            <a href="#" class="linck_menu">Для кого мы работаем</a>
+                            <a href="#" class="link_menu">Для кого мы работаем</a>
                         </li>
                         <li class="menu_el">
-                            <a href="#" class="linck_menu">Сертификаты</a>
+                            <a href="#" class="link_menu">Сертификаты</a>
                         </li>
                         <li class="menu_el">
-                            <a href="#" class="linck_menu">О нас</a>
+                            <a href="#" class="link_menu">О нас</a>
                         </li>
                         <li class="menu_el">
-                            <a href="#" class="linck_menu">FAQ</a>
+                            <a href="#" class="link_menu">FAQ</a>
                         </li>
                         <li class="menu_el">
-                            <a href="#" class="linck_menu">Контакты</a>
+                            <a href="#" class="link_menu">Контакты</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="header_contacts">
-                    <div class="contact_icon_wrapper">
-                        <img src="./src/phone_icon.svg" alt="" class="icon_contact">
+                <div class="wrapper_mobile_menu">
+                    <div class="wrapper_sandwich">
+                        <img src="./src/hamburger.png" class="hamburger" alt="">
                     </div>
-                    <div class="contact_info">
-                        <a href="" class="contact_link">+7 (812) 313-58-45</a>
-                    </div>
+                    <nav class="header_navbar--mobile invisible">
+                        <ul class="menu_list--mobile">
+                            <li class="menu_el--mobile">
+                                <a href="#" class="link_menu--mobile">Каталог</a>
+                            </li>
+                            <li class="menu_el--mobile">
+                                <a href="#" class="link_menu--mobile">Производители</a>
+                            </li>
+                            <li class="menu_el--mobile">
+                                <a href="#" class="link_menu--mobile">Для кого мы работаем</a>
+                            </li>
+                            <li class="menu_el--mobile">
+                                <a href="#" class="link_menu--mobile">Сертификаты</a>
+                            </li>
+                            <li class="menu_el--mobile">
+                                <a href="#" class="link_menu--mobile">О нас</a>
+                            </li>
+                            <li class="menu_el--mobile">
+                                <a href="#" class="link_menu--mobile">FAQ</a>
+                            </li>
+                            <li class="menu_el--mobile">
+                                <a href="#" class="link_menu--mobile">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
+                
             </header>
             <div class="wrapper_section">
                 <section class="section title_section">
@@ -109,8 +128,8 @@
                     </div>
                 </section>
             </div>
-            <div class="wrapper_section wrapper_section--why">
-                <section class="section title_section">
+            <div class="wrapper_section wrapper_section--why ">
+                <section class="section title_section title_section--why">
                     <div class="container_section container_section--why">
                         <div class="title_wrapper">
                             <h2 class="title_why">
@@ -190,7 +209,6 @@
                                 </li>
                             </ul>
                         </div>
-
                     </div>
                 </section>
             </div>
@@ -198,69 +216,58 @@
                 <section class="section title_section section--prod">
                     <div class="container_section container_section--prod">
                         <div class="title_wrapper title_wrapper--prods">
-                            <h2 class="title_why">
-                                Почему с нами выгодно
-                            </h2>
+                            <h2 class="title_why title--prod">Наши производители</h2>
                         </div>
-                        <div class="wrapper_carusel">
-
+                        <div class="wrapper_carousel">
                             <div class="wrapper_arrow">
-                                <a href="" class="arrow_event">
-
+                                <a href="#" class="arrow_event">
                                     <img src="./src/producers/arrow.png" alt="" class="arrow left">
                                 </a>
                             </div>
-
-                            <div class="container_carusel">
-                                <ul class="carusel_list">
-                                    <li class="carusel_item">
+                            <div class="container_carousel">
+                                <ul class="carousel_list">
+                                    <li class="carousel_item">
                                         <div class="wrapper_img_item">
-                                            <img src="./src/producers/image.png" alt="" class="img_carusel">
+                                            <img src="./src/producers/image.png" alt="" class="img_carousel">
                                         </div>
                                     </li>
-                                    <li class="carusel_item">
+                                    <li class="carousel_item">
                                         <div class="wrapper_img_item">
-                                            <img src="./src/producers/img2.png" alt="" class="img_carusel">
+                                            <img src="./src/producers/img2.png" alt="" class="img_carousel">
                                         </div>
                                     </li>
-                                    <li class="carusel_item">
+                                    <li class="carousel_item">
                                         <div class="wrapper_img_item">
-                                            <img src="./src/producers/img3.png" alt="" class="img_carusel">
+                                            <img src="./src/producers/img3.png" alt="" class="img_carousel">
                                         </div>
                                     </li>
-                                    <li class="carusel_item">
+                                    <li class="carousel_item">
                                         <div class="wrapper_img_item">
-
-                                            <img src="./src/producers/img4.png" alt="" class="img_carusel">
+                                            <img src="./src/producers/img4.png" alt="" class="img_carousel">
                                         </div>
-
                                     </li>
-                                    <li class="carusel_item">
+                                    <li class="carousel_item">
                                         <div class="wrapper_img_item">
-                                            <img src="./src/producers/img5.png" alt="" class="img_carusel">
+                                            <img src="./src/producers/img5.png" alt="" class="img_carousel">
                                         </div>
                                     </li>
                                 </ul>
-                                <div class="description--prod">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur. Non eget blandit in euismod felis id
-                                        quisque nunc. Non orci lacus elit mauris velit gravida imperdiet id. Ipsum
-                                        pulvinar ac ut sociis. Sed magna gravida consequat et euismod aenean quis
-                                        mauris. Ut etiam egestas ultrices faucibus ultrices nisl enim consequat
-                                        faucibus. Nibh id leo ullamcorper eleifend. Id at commodo interdum et leo.
-                                    </p>
-                                </div>
                             </div>
                             <div class="wrapper_arrow">
-                                <a href="" class="arrow_event">
+                                <a href="#" class="arrow_event">
                                     <img src="./src/producers/arrow.png" alt="" class="arrow right">
                                 </a>
-
                             </div>
                         </div>
-
+                        <div class="description--prod">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Non eget blandit in euismod felis id quisque nunc. Non orci
+                                lacus elit mauris velit gravida imperdiet id. Ipsum pulvinar ac ut sociis. Sed magna gravida consequat
+                                et euismod aenean quis mauris. Ut etiam egestas ultrices faucibus ultrices nisl enim consequat faucibus.
+                                Nibh id leo ullamcorper eleifend. Id at commodo interdum et leo.
+                            </p>
+                        </div>
                     </div>
-
                 </section>
             </div>
             <div class="wrapper_section wrapper_section--shem">
@@ -268,18 +275,16 @@
                     <div class="container_section container_section--why">
                         <div class="title_wrapper">
                             <h2 class="title_why">
-                                Почему с нами выгодно
+                                Схема работы
                             </h2>
                             <div class="description_why">
-                                С 1996 года мы занимаемся оптовыми поставками электронных компонентов от ведущих
-                                производителей из Европы
-                                и Азии для Российских потребителей.
+                                Lorem ipsum dolor sit amet consectetur. Augue velit in enim sagittis imperdiet sit mauris. Vitae sit in fusce massa amet.
                             </div>
                         </div>
-                        <div class="container_cards container_cards--shem">
+                        <div class="container_cards container_cards--shem desctop">
                             <ul class=" card_list--shem">
 
-                                <div class="wrapper_three">
+                                <div class="wrapper_three ">
                                     <li class=" card_el--shem">
                                         <div class="container_card">
                                             <div class="wrapper_id_card">
@@ -304,12 +309,11 @@
                                             </div>
                                             <div class="content_card_container">
                                                 <div class="title_card">
-                                                    ВЫ ОСТАВЛЯЕТЕ ЗАЯВКУ
+                                                    МЫ ПРОВЕРЯЕМ НАЛИЧИЕ ПОЗИЦИЙ
                                                 </div>
                                                 <div class="description_card--shem">
-                                                    Отправить запрос вы можете любым удобным для вас способом: например,
-                                                    через форму на сайте. Также вы можете связаться с нами напрямую.
-                                                </div>
+                                                    Проверяем наличие на складе, 
+                                                    а также актуальность производства (возможна замена, если необходимо.) Если требуется замена - подбираем аналоги и привозим на заказ.                                                </div>
                                             </div>
                                         </div>
 
@@ -321,11 +325,10 @@
                                             </div>
                                             <div class="content_card_container">
                                                 <div class="title_card">
-                                                    ВЫ ОСТАВЛЯЕТЕ ЗАЯВКУ
+                                                    ФОРМИРУЕМ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ
                                                 </div>
                                                 <div class="description_card--shem">
-                                                    Отправить запрос вы можете любым удобным для вас способом: например,
-                                                    через форму на сайте. Также вы можете связаться с нами напрямую.
+                                                    На данном этапе мы с вами согласуем ценовое предложение, обговариваем сроки поставки и условия оплаты.
                                                 </div>
                                             </div>
                                         </div>
@@ -340,12 +343,10 @@
                                             </div>
                                             <div class="content_card_container">
                                                 <div class="title_card">
-                                                    ВЫ ОСТАВЛЯЕТЕ ЗАЯВКУ
+                                                    ВЫ ПОЛУЧАЕТЕ ТОВАР
                                                 </div>
                                                 <div class="description_card--shem">
-                                                    Отправить запрос вы можете любым удобным для вас способом: например,
-                                                    через форму на сайте. Также вы можете связаться с нами напрямую.
-                                                </div>
+                                                    Поставляем вам товар в надлежащей упаковке в сопровождении оригиналов всех необходимых документов либо вы забираете его самовывозом.                                                </div>
                                             </div>
                                         </div>
 
@@ -357,11 +358,10 @@
                                             </div>
                                             <div class="content_card_container">
                                                 <div class="title_card">
-                                                    ВЫ ОСТАВЛЯЕТЕ ЗАЯВКУ
+                                                    МЫ ВЫПОЛНЯЕМ ЗАКАЗ
                                                 </div>
                                                 <div class="description_card--shem">
-                                                    Отправить запрос вы можете любым удобным для вас способом: например,
-                                                    через форму на сайте. Также вы можете связаться с нами напрямую.
+                                                    Товар поступает на склад в Москву или Санкт-Петербург, где мы сверяем правильность поставки и начинаем сборку.
                                                 </div>
                                             </div>
                                         </div>
@@ -374,19 +374,110 @@
                                             </div>
                                             <div class="content_card_container">
                                                 <div class="title_card">
-                                                    ВЫ ОСТАВЛЯЕТЕ ЗАЯВКУ
-                                                </div>
+                                                    ПРОВОДИМ ОПЛАТУ                                                </div>
                                                 <div class="description_card--shem">
-                                                    Отправить запрос вы можете любым удобным для вас способом: например,
-                                                    через форму на сайте. Также вы можете связаться с нами напрямую.
-                                                </div>
-                                            </div>
+                                                    Далее, после получения авансового платежа, мы размещаем заказ.                                            </div>
                                         </div>
 
                                     </li>
                                 </div>
 
 
+                            </ul>
+                        </div>
+                        <div class="container_cards container_cards--shem mobile">
+                            <ul class="list_card--shem">
+                                <li class="el_card--shem">
+                                    <div class="el_card_container">
+                                        <div class="id_card-mobile">
+                                            <img src="./src/shem/id1.png" alt="" class="img_card--mobile">
+                                        </div>
+                                        <div class="text_content_card">
+
+                                            <div class="title_card--mobile">
+                                                lorem
+                                            </div>
+                                            <div class="description_card--mobile">
+                                                Отправить запрос вы можете любым удобным для вас способом: например, через форму на сайте. Также вы можете связаться с нами напрямую.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li><li class="el_card--shem">
+                                    <div class="el_card_container">
+                                        <div class="id_card-mobile">
+                                            <img src="./src/shem/id2.png" alt="" class="img_card--mobile">
+                                        </div>
+                                        <div class="text_content_card">
+
+                                            <div class="title_card--mobile">
+                                                lorem
+                                            </div>
+                                            <div class="description_card--mobile">
+                                                Отправить запрос вы можете любым удобным для вас способом: например, через форму на сайте. Также вы можете связаться с нами напрямую.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li><li class="el_card--shem">
+                                    <div class="el_card_container">
+                                        <div class="id_card-mobile">
+                                            <img src="./src/shem/id3.png" alt="" class="img_card--mobile">
+                                        </div>
+                                        <div class="text_content_card">
+
+                                            <div class="title_card--mobile">
+                                                lorem
+                                            </div>
+                                            <div class="description_card--mobile">
+                                                Отправить запрос вы можете любым удобным для вас способом: например, через форму на сайте. Также вы можете связаться с нами напрямую.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li><li class="el_card--shem">
+                                    <div class="el_card_container">
+                                        <div class="id_card-mobile">
+                                            <img src="./src/shem/id4.png" alt="" class="img_card--mobile">
+                                        </div>
+                                        <div class="text_content_card">
+
+                                            <div class="title_card--mobile">
+                                                lorem
+                                            </div>
+                                            <div class="description_card--mobile">
+                                                Отправить запрос вы можете любым удобным для вас способом: например, через форму на сайте. Также вы можете связаться с нами напрямую.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li><li class="el_card--shem">
+                                    <div class="el_card_container">
+                                        <div class="id_card-mobile">
+                                            <img src="./src/shem/id5.png" alt="" class="img_card--mobile">
+                                        </div>
+                                        <div class="text_content_card">
+
+                                            <div class="title_card--mobile">
+                                                lorem
+                                            </div>
+                                            <div class="description_card--mobile">
+                                                Отправить запрос вы можете любым удобным для вас способом: например, через форму на сайте. Также вы можете связаться с нами напрямую.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li><li class="el_card--shem">
+                                    <div class="el_card_container">
+                                        <div class="id_card-mobile">
+                                            <img src="./src/shem/id6.png" alt="" class="img_card--mobile">
+                                        </div>
+                                        <div class="text_content_card">
+
+                                            <div class="title_card--mobile">
+                                                lorem
+                                            </div>
+                                            <div class="description_card--mobile">
+                                                Отправить запрос вы можете любым удобным для вас способом: например, через форму на сайте. Также вы можете связаться с нами напрямую.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
 
@@ -405,20 +496,20 @@
                         </div>
                         <div class="container_cards">
                             <ul class="qwes_list">
-                                <li class="qwes_el qwes_el--active">
-                                    <div class="wrapper_el wrapper_el--active">
+                                <li class="qwes_el ">
+                                    <div class="wrapper_el ">
 
                                         <div class="title_qwes">
-                                            <p>Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
+                                            <p>1 Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
                                         </div>
                                         <div class="wrapper_button_qwes">
                                             <img src="./src/answers/icon.svg" alt="" class="button_icon button_icon--active">
                                         </div>
 
                                     </div>
-                                    <div class="answer_block answer_block--active">
+                                    <div class="answer_block ">
                                         <div class="container_answers">
-                                            <p class="desc_page">Like the phrase “stem cell” itself, “stem cell therapy”
+                                            <p class="desc_page"> 1 Like the phrase “stem cell” itself, “stem cell therapy”
                                                 is often used to describe a variety of different medical therapies that
                                                 utilize stem cells in some form to treat a patient. Sometimes the term
                                                 is used incorrectly to refer to platelet rich plasma (PRP) injections.
@@ -450,7 +541,7 @@
                                     <div class="wrapper_el">
 
                                         <div class="title_qwes">
-                                            <p>Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
+                                            <p>2 Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
                                         </div>
                                         <div class="wrapper_button_qwes">
                                             <img src="./src/answers/icon.svg" alt="" class="button_icon">
@@ -459,7 +550,7 @@
                                     </div>
                                     <div class="answer_block ">
                                         <div class="container_answers">
-                                            <p class="desc_page">Like the phrase “stem cell” itself, “stem cell therapy”
+                                            <p class="desc_page"> 2 Like the phrase “stem cell” itself, “stem cell therapy”
                                                 is often used to describe a variety of different medical therapies that
                                                 utilize stem cells in some form to treat a patient. Sometimes the term
                                                 is used incorrectly to refer to platelet rich plasma (PRP) injections.
@@ -491,7 +582,7 @@
                                     <div class="wrapper_el">
 
                                         <div class="title_qwes">
-                                            <p>Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
+                                            <p>3 Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
                                         </div>
                                         <div class="wrapper_button_qwes">
                                             <img src="./src/answers/icon.svg" alt="" class="button_icon">
@@ -500,7 +591,7 @@
                                     </div>
                                     <div class="answer_block ">
                                         <div class="container_answers">
-                                            <p class="desc_page">Like the phrase “stem cell” itself, “stem cell therapy”
+                                            <p class="desc_page"> 3 Like the phrase “stem cell” itself, “stem cell therapy”
                                                 is often used to describe a variety of different medical therapies that
                                                 utilize stem cells in some form to treat a patient. Sometimes the term
                                                 is used incorrectly to refer to platelet rich plasma (PRP) injections.
@@ -532,7 +623,7 @@
                                     <div class="wrapper_el">
 
                                         <div class="title_qwes">
-                                            <p>Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
+                                            <p>4 Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
                                         </div>
                                         <div class="wrapper_button_qwes">
                                             <img src="./src/answers/icon.svg" alt="" class="button_icon">
@@ -541,7 +632,7 @@
                                     </div>
                                     <div class="answer_block ">
                                         <div class="container_answers">
-                                            <p class="desc_page">Like the phrase “stem cell” itself, “stem cell therapy”
+                                            <p class="desc_page"> 4 Like the phrase “stem cell” itself, “stem cell therapy”
                                                 is often used to describe a variety of different medical therapies that
                                                 utilize stem cells in some form to treat a patient. Sometimes the term
                                                 is used incorrectly to refer to platelet rich plasma (PRP) injections.
@@ -573,7 +664,7 @@
                                     <div class="wrapper_el">
 
                                         <div class="title_qwes">
-                                            <p>Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
+                                            <p>5 Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</p>
                                         </div>
                                         <div class="wrapper_button_qwes">
                                             <img src="./src/answers/icon.svg" alt="" class="button_icon">
@@ -582,7 +673,7 @@
                                     </div>
                                     <div class="answer_block ">
                                         <div class="container_answers">
-                                            <p class="desc_page">Like the phrase “stem cell” itself, “stem cell therapy”
+                                            <p class="desc_page">  Like the phrase “stem cell” itself, “stem cell therapy”
                                                 is often used to describe a variety of different medical therapies that
                                                 utilize stem cells in some form to treat a patient. Sometimes the term
                                                 is used incorrectly to refer to platelet rich plasma (PRP) injections.
